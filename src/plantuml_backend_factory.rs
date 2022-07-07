@@ -43,6 +43,7 @@ fn create_backend(cmd: &str) -> Box<dyn PlantUMLBackend> {
 }
 
 struct PlantUMLNoServerErrorBackend;
+
 impl PlantUMLBackend for PlantUMLNoServerErrorBackend {
     /// Display an error message when the user built the plugin without server
     /// support, but does configure a server in book.toml.

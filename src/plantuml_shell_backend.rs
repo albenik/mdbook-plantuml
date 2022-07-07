@@ -9,7 +9,7 @@ use anyhow::{bail, Result};
 use tempfile::{tempdir, TempDir};
 
 /// A trait class for wrapping the actual rendering command
-/// Only here to make unit testing the renderer possbile, this is cheating a
+/// Only here to make unit testing the renderer possible, this is cheating a
 /// bit, but the other option is not testing it at all, or partially through
 /// integration tests
 trait CommandExecutor {
@@ -218,7 +218,7 @@ mod tests {
                 String::from("plantumlcmd"),
                 String::from("-tsome_supported_extension"),
                 String::from("-nometadata"),
-                String::from("froboz.puml")
+                String::from("froboz.puml"),
             ],
             shell
                 .get_cmd_arguments(&file, "some_supported_extension")
